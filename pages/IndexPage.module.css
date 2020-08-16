@@ -1,0 +1,47 @@
+.infoText {
+    font-weight: 400;
+    font-size: 22px;
+    color: #D9D9D9;
+}
+
+.infoTextNumber {
+    font-weight: 700;
+    color: #2e3131;
+    text-decoration: underline;
+}
+
+.buttonPlacement {}
+
+.status {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.statusText {
+    text-transform: uppercase;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.statusGreyText {
+    color: #D9D9D9;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+@media (max-width: 575.98px) {
+    .infoText {
+        font-size: 18px;
+    }
+
+    .statusText {
+        font-size: 16px;
+    }
+
+    .statusGreyText {
+        font-size: 14px;
+    }
+}
