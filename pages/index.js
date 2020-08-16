@@ -8,7 +8,7 @@ import ui from '../styles/uikit.module.css'
 import styles from './IndexPage.module.css'
 
 const IndexPage = () => {
-    const [sticksPerDay, setSticksPerDay] = useState(19)
+    const [sticksPerDay, setSticksPerDay] = useState(0)
     const [isTimerStarted, setIsTimerStarted] = useState(false)
 
     const playButtonClicked = () => {
@@ -43,7 +43,7 @@ const IndexPage = () => {
                     <p className={styles.statusText}>
                         { isTimerStarted ? (
                             <CountdownTimer 
-                                count={3}
+                                count={10}
                                 onEnd={() => onTimerEnd()}
                             />
                         ) : (
